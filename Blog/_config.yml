@@ -1,4 +1,4 @@
-title:            leighak.in
+title:            Intigold Mines Ltd.
 description:      "TTAGIT Blog"
 logo:             omikron.png
 disqus_shortname: leighakin
@@ -13,7 +13,7 @@ animated_fins:	  true
 # Specify the fin color in RGB value
 fin_color:        "255,255,255"
 # Change url to your domain. Leave localhost server or blank when working locally.
-url:              http://leighak.in
+url:              http://intigold.github.io/blog
 
 # Owner/author information
 owner:

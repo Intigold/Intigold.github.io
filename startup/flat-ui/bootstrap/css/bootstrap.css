@@ -808,9 +808,9 @@ pre code {
   width: 8.333333333333332%;
 }
 .col-xs-pull-12 {
-  right: 100%;
+  right: 75%;
   float: right;
-  left:-10%;
+  left:-25%;
   text-align:left;
 }
 .col-xs-pull-11 {

@@ -498,6 +498,14 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
+.img {
+  width: auto\9;
+  height: auto;
+  max-width: 50%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
 h1,
 .h1,
 h2,

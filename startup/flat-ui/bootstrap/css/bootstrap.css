@@ -808,10 +808,8 @@ pre code {
   width: 8.333333333333332%;
 }
 .col-xs-pull-12 {
-  right: 75%;
-  float: right;
-  left:-25%;
-  text-align:left;
+  right: 100%;
+  margin: 0 auto;
 }
 .col-xs-pull-11 {
   right: 91.66666666666666%;

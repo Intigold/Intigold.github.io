@@ -501,9 +501,8 @@ img {
 .img {
   width: 42;
   height: 42;
-  float:right;
   max-width: 50%;
-  vertical-align: middle;
+  vertical-align: right;
   border: 0;
   -ms-interpolation-mode: bicubic;
 }

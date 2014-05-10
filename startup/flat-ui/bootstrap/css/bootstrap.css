@@ -810,8 +810,7 @@ pre code {
 .col-xs-pull-12 {
   right: 100%;
   float: right;
-  position:relative;
-  left:-80%;
+  left:-10%;
   text-align:left;
 }
 .col-xs-pull-11 {

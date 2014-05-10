@@ -498,9 +498,9 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
-.img {
-  width: 42;
-  height: 42;
+img2 {
+  width: 50;
+  height: 50;
   float: right; 
   margin: 0px 0px 0px 200px;"
   text-align: right

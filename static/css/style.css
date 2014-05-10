@@ -501,6 +501,7 @@ img {
 .img {
   width: 42;
   height: 42;
+  float:right;
   max-width: 50%;
   vertical-align: middle;
   border: 0;

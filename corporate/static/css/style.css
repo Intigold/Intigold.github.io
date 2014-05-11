@@ -644,11 +644,11 @@ section * {
   text-align: right;
 }
 .crew-4 .members .member {
-  width: 265px;
+  width: 230px;
   display: inline-block;
 }
 .crew-4 .members .photo-wrapper {
-  width: 265px;
+  width: 230px;
   height: 180px;
   position: relative;
   -webkit-border-radius: 6px;

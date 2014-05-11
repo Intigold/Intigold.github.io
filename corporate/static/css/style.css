@@ -661,7 +661,7 @@ section * {
   -moz-border-radius: 6px;
   border-radius: 6px;
   overflow: hidden;
-  background-color: #ecf0f1;
+  background-color: #ffffff;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;

@@ -503,7 +503,7 @@ img2 {
   height: 42;
   float: right;
   max-width: 70%;
-  vertical-align: middle;
+  vertical-align: right;
   border: 0;
   -ms-interpolation-mode: bicubic;
 }

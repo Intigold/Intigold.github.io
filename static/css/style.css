@@ -501,6 +501,7 @@ img {
 img2 {
   width: 42;
   height: 42;
+  float: right;
   max-width: 70%;
   vertical-align: middle;
   border: 0;

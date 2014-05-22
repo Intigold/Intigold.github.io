@@ -499,8 +499,8 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 img2 {
-  width: auto\9;
-  height: auto;
+  width: 42;
+  height: 42;
   max-width: 70%;
   vertical-align: middle;
   border: 0;

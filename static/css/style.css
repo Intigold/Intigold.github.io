@@ -501,7 +501,7 @@ img {
 img2 {
   width: auto\9;
   height: auto;
-  position:absolute;
+  float: right;
   right:0px;
   width: 70%;
   border: 0;

@@ -499,11 +499,11 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 img2 {
-  width: auto;
+  width: auto\9;
   height: auto;
   position:absolute;
-  right:5px;
-  max-width: 100%;
+  right:0px;
+  max-width: 70%;
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;

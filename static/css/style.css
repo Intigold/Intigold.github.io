@@ -506,6 +506,10 @@ img2 {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
+.col-xs-pull-12 {
+  right: 100%;
+  float: right;
+}
 h1,
 .h1,
 h2,

@@ -671,7 +671,7 @@ section * {
   border-radius: 0;
 }
 .navbar .navbar-toggle:before {
-  display: inline;
+  display: block;
 }
 .navbar .navbar-form .btn {
   height: auto;

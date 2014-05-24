@@ -1985,11 +1985,11 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   color: #1abc9c;
 }
 .navbar-toggle .icon-bar {
-  display: block;
+  display: none;
 }
 @media (min-width: 768px) {
   .navbar-toggle {
-    display: block;
+    display: none;
   }
 }
 .navbar-nav {
@@ -2153,7 +2153,7 @@ select[multiple].navbar-form .btn {
   .navbar-nav > li > .dropdown-menu {
     -webkit-transition: all 0s;
     transition: all 0s;
-    display: block;
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -2229,7 +2229,7 @@ select[multiple].navbar-form .btn {
 .active .navbar-unread,
 .active .navbar-new {
   background-color: #ffffff;
-  display: block;
+  display: none;
 }
 .navbar-new {
   background-color: #e74c3c;

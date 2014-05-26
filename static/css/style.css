@@ -592,7 +592,7 @@ section * {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 1;
   background: 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -617,7 +617,6 @@ section * {
 .navbar {
   left: 0;
   right: 0;
-  z-index: 1;
 }
 .navbar .brand {
   padding: 23px 28px 24px 0;

@@ -70,7 +70,7 @@
                 <h6>Mineralization:</h6>
                 <p>mesothermal vein hosted Au-Ag mineralization</br>
 				mesothermal disseminated Au-Ag mineralization</p>
-                <div class="quote">We have considered your needs in developing the html version of our UI Kit, which contains.</div>
+                <div class="quote">Gold, when beaten, shines. ~ Peruvian Proverb</div>
 				<h6>Technical Reports (43-101):</h6>
                 <p>Currently there is no 43-101 Report on the Property.</p></br>
 				<h6>The Property:</h6>
@@ -84,10 +84,34 @@ The initial exploration program on the Chance E Claim will consist of, but is no
 				<p>In addition, Intigold shall have the right to purchase one-half of the 1.5-per-cent NSR from St. Elias for the sum of $1 million, thereby reducing the NSR payable from 1.5 per cent to 0.75 per cent.</p>
                 <div class="tags">
                     <ul>
-                        <li><a href="#">design</a></li>
-                        <li><a href="#">web design</a></li>
-                        <li><a href="#">tutorials</a></li>
-                        <li><a href="#">thoughts</a></li>
+                        <li><a href="http://steliasmines.com/">St. Elias Mines</a></li>
+                        <li><title>Stock Ticker</title>
+						<script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+						<script src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+						<script>
+						$(document).ready(function(){var stock = 'SLI.V';
+						var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%3D%22' + stock + '%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=';
+						$.getJSON(url,function(data){
+						var stockInfo = data[0];
+						var stockString = 'Symbol: ' + data.query.results.quote.symbol + ' Last: ' + data.query.results.quote.LastTradePriceOnly + ' Ask: ' + data.query.results.quote.Ask + ' Bid: ' + data.query.results.quote.Bid + ' Volume: ' + data.query.results.quote.Volume;
+						$('.stockTick').html('<h1>' + stockString + '</h1>');
+						                });
+						        })
+						        </script>
+								<div id='main'>
+								      <div class='container'>
+								        <div class='row' id='content'>
+								          <div class='col-xs-12 col-md-12 col-lg-12 vcenter text-center'>
+								          <div class="stockTick">
+								            </div>
+								             </div>
+								              </div>
+								               <div class='row footer' id='footer'>
+								                 <div class='col-xs-12 col-md-12 col-lg-12 vcenter text-center'>
+								                                </div>
+															</div>
+													</div>
+											</div></li>
                     </ul>
                 </div>
             </div>

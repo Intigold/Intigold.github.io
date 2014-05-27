@@ -1,8 +1,6 @@
 // Wait for DOM
 $(function (){
-	
-	e.preventDefault();
-  
+
   // Global variables
   var $fb = $('a[data-fluidbox]'),
       vpRatio;

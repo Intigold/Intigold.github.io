@@ -126,18 +126,30 @@ The Beaverdell Project is located within the historic Beaverdell Mining Camp, an
 <p>Intigold is currently carrying out its 2012 exploration program.</p></br>
                 <h6>Terms of Property Option Agreement:</h6>
 				<p>On August 15, 2007, as amended August 20, 2007, and January 15, 2010, Intigold entered into a Property Option Agreement (collectively the “Property Agreement”) with St. Elias.  Under the terms of the Property Agreement, Intigold has the right to acquire a 100% interest in the Beaverdell Property from St. Elias (subject to a 1.5% net smelter return) by paying $250,000 to St. Elias, issuing 400,000 common shares of Intigold to St. Elias and incurring $1 Million in Property exploration expenditures.  On September 20, 2012, Intigold and St. Elias entered into an Extension Agreement, whereby St. Elias granted an extension to Intigold until December 31, 2012 to make certain cash and exploration expenditure payments, as more particularly set out in the Option Agreement.</p>
-	                <div class="tags">
-									      <div class='container'>
-									        <div class='row' id='content'>
-									          <div class='col-sm-7'>
-										          <div class="stockTick">
-										            </div>
-									             </div>
-									              </div>
-										</div>
-						     
-	                </div>
-	            </div>
+					<div class="tags">
+					                        <title>Stock Ticker</title>
+											<script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+											<script>
+											$(document).ready(function(){var stock = 'SLI.V';
+											var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%3D%22' + stock + '%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=';
+											$.getJSON(url,function(data){
+											var stockInfo = data[0];
+											var stockString = 'Symbol: ' + data.query.results.quote.symbol + ' Last: ' + data.query.results.quote.LastTradePriceOnly + ' Ask: ' + data.query.results.quote.Ask + ' Bid: ' + data.query.results.quote.Bid + ' Volume: ' + data.query.results.quote.Volume;
+											$('.stockTick').html('<li>' + stockString + '</li>');
+											                });
+											        })
+											        </script>
+													      <div class='container'>
+													        <div class='row' id='content'>
+													          <div class='col-sm-7'>
+														          <div class="stockTick">
+														            </div>
+													             </div>
+													              </div>
+														</div>
+
+					                </div>
+					            </div>
             <div class="col-sm-3 col-sm-offset-2">
                 <div class="related-articles">
                     <h6>Related Articles</h6>

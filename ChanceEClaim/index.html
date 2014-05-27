@@ -84,9 +84,6 @@ The initial exploration program on the Chance E Claim will consist of, but is no
 				<p>Intigold has the right to earn up to a 60% interest in the Property from St. Elias by paying $500,000 in cash to St. Elias, issuing 100,000 common shares of Intigold to St. Elias and incurring $1,000,000 in Property exploration expenditures over a three-year period. The remaining 40% interest in the Property is a carried interest to production.</p>
 				<p>In addition, Intigold shall have the right to purchase one-half of the 1.5-per-cent NSR from St. Elias for the sum of $1 million, thereby reducing the NSR payable from 1.5 per cent to 0.75 per cent.</p>
                 <div class="tags">
-                    <ul>
-                        <li><a href="http://steliasmines.com/">St. Elias Mines</a></li>
-						</ul>
                         <title>Stock Ticker</title>
 						<script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
 						<script src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
@@ -95,7 +92,7 @@ The initial exploration program on the Chance E Claim will consist of, but is no
 						var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%3D%22' + stock + '%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=';
 						$.getJSON(url,function(data){
 						var stockInfo = data[0];
-						var stockString = 'Symbol: ' + data.query.results.quote.symbol + ' Last: ' + data.query.results.quote.LastTradePriceOnly + ' Ask: ' + data.query.results.quote.Ask + ' Bid: ' + data.query.results.quote.Bid + ' Volume: ' + data.query.results.quote.Volume;
+						var stockString = 'St. Elias Mines: ' + data.query.results.quote.symbol + ' Last: ' + data.query.results.quote.LastTradePriceOnly + ' Ask: ' + data.query.results.quote.Ask + ' Bid: ' + data.query.results.quote.Bid + ' Volume: ' + data.query.results.quote.Volume;
 						$('.stockTick').html('<li>' + stockString + '</li>');
 						                });
 						        })

@@ -1223,7 +1223,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
  * Lightbox stylesheet  
  * */
 .gallery {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 /* Fluidbox styling starts here */
@@ -1312,7 +1312,7 @@ a[class^='float'] {
 /* Media queries, unrelated to functionality of Fluidbox */
 @media only screen and (max-width: 768px) {
   a[class^='float'] {
-     width: 50%; 
+     width: 100%; 
   }
 }
 @media only screen and (max-width: 600px) {

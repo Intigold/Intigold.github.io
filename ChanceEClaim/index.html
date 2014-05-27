@@ -94,7 +94,7 @@ The initial exploration program on the Chance E Claim will consist of, but is no
 						$.getJSON(url,function(data){
 						var stockInfo = data[0];
 						var stockString = 'Symbol: ' + data.query.results.quote.symbol + ' Last: ' + data.query.results.quote.LastTradePriceOnly + ' Ask: ' + data.query.results.quote.Ask + ' Bid: ' + data.query.results.quote.Bid + ' Volume: ' + data.query.results.quote.Volume;
-						$('.stockTick').html('<h1>' + stockString + '</h1>');
+						$('.stockTick').html('<li>' + stockString + '</li>');
 						                });
 						        })
 						        </script>

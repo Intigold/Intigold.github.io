@@ -491,8 +491,10 @@ footer {
   }
 }
 img {
-  width: auto\9;
+  padding-top: 20px;	
+  width: auto;
   height: auto;
+  float: right;
   max-width: 85%;
   vertical-align: right;
   border: 0;

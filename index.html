@@ -22,23 +22,36 @@
     </head>
 
     <body>
-        <div class="page-wrapper"><header class="header-15 hidden">
+        <div class="page-wrapper"><header class="header-15">
     <div class="container">
         <div class="row">
             <div class="navbar col-sm-12" role="navigation">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle"></button>
-                    <a class="brand" href="#">Startup</a>
+                    <a class="brand" href="/">Intigold Mines Ltd</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <form class="navbar-form pull-right">
-                        <a class="btn" href="#">TRY IT</a>
+	                        <li class="active"><a href="http://intigold.github.io/">Home</a></li>
+	                        <li><a href="http://intigold.github.io/Intigold.github.io-news/">News</a></li>
+							<li><a href="http://intigold.github.io/corporate">Corporate</a></li>
+	                        <li><a href="#contact">Contact</a></li>
+						    <li class="dropdown">
+						    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+						        <li><a href="http://intigold.github.io/ChanceEClaim">Chance E Project, Peru</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">British Columbia Mines</li>
+								<li><a href="http://intigold.github.io/BeaverdellProperty">Beaverdell Gold Silver Project, BC</a></li>
+								<li><a href="http://intigold.github.io/DonnamoreProperty">Donnamore Project, BC</a></li>
+								<li><a href="http://intigold.github.io/EveningStarProperty">Evening Star Project, BC</a></li>
+								<li><a href="http://intigold.github.io/GoldpostProperty">Goldpost Project, BC</a></li>
+								<li><a href="http://intigold.github.io/ScandieProperty">Scandie Project, BC</a></li>
+							</ul>
+							</li>
+						</ul>
+	                    <form class="navbar-form pull-right">
+	                        <a class="btn" href="http://eepurl.com/UrruT">Subscribe</a>
                     </form>
                 </div>
             </div>
@@ -50,29 +63,56 @@
     <div class="background">&nbsp;</div>
     <div class="container">
         <div class="hero-unit">
-            <h1>Made in New York</h1>
-            <div class="fui-cmd"></div>
-            <p>WE LOVE WHAT WE DO</p>
-        </div>
-    </div>
-</section><section class="content-3">
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 aligment">
-                    <h3>We’ve created the product that will help your startup to look better.</h3>
-                    <p>
-                        Startup Design Framework contains components and complex blocks which can easily be
-                        integrated into almost any design. Responsive layout, clear grid, retina ready.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="img">
-                        <img src="startup/common-files/img/content/ticket-green@2x.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+						<title>Stock Ticker</title>
+						<script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+						<script>
+						$(document).ready(function(){var stock = 'IGD.V';
+						var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%3D%22' + stock + '%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=';
+						$.getJSON(url,function(data){
+						var stockInfo = data[0];
+						var stockString = 'Symbol: ' + data.query.results.quote.symbol + ' Last: ' + data.query.results.quote.LastTradePriceOnly + ' Ask: ' + data.query.results.quote.Ask + ' Bid: ' + data.query.results.quote.Bid + ' Volume: ' + data.query.results.quote.Volume;
+						$('.stockTick').html('<h1>' + stockString + '</h1>');
+						                });
+						        })
+						        </script>
+								<div id='main'>
+								      <div class='container'>
+								        <div class='row' id='content'>
+								          <div class='col-xs-12 col-md-12 col-lg-12 vcenter text-center'>
+								          <div class="stockTick">
+								            </div>
+								             </div>
+								              </div>
+								               <div class='row footer' id='footer'>
+								                 <div class='col-xs-12 col-md-12 col-lg-12 vcenter text-center'>
+								                                </div>
+															</div>
+													</div>
+											</div>
+			            <div class="fui-cmd"></div>
+			            <p>INVESTMENTS FOR THE FUTURE</p>
+			        </div>
+			    </div>
+			</section><section class="content-3">
+			    <div>
+			        <div class="container">
+			            <div class="row">
+			                <div class="col-sm-6 aligment">
+			                    <h3>Intigold Mines Ltd. - Strategic Plan</h3>
+			                    <p>
+			                        INTIGOLD MINES LTD. is a Canadian junior mining company trading on the TSX Venture Exchange under the symbol “IGD”.<CR> 
+									The Company has a proven management team and extensive connections to projects and financing.
+			                        Intigold is focused on maximizing shareholder value through identifying and developing early stage gold and silver deposits.</p><CR>
+									<p>In addition, Intigold has aquired a 51% interest in TTAGIT Social Networks Inc.</p><CR>
+			                    </p>
+			                </div>
+			                <div class="col-xs-pull-122">
+			                    <div class="img">
+			                        <img src="startup/common-files/img/content/perustatue.jpg" alt="Peru Statue">
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
         <div class="delimiter">&nbsp;</div>
         <div class="container">
             <div class="row features">

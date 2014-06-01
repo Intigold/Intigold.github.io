@@ -1668,3 +1668,6 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     margin: 25px 0 10px;
   }
 }
+.row-padding {
+	padding-left: 80px
+}

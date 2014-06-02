@@ -3263,7 +3263,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 .dropdown-menu {
   background-color: #f3f4f5;
   border: none;
-  display: block;
+  display: block; 
   margin-top: 8px;
   opacity: 0;
   padding: 0;

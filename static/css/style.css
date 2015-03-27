@@ -2,6 +2,9 @@
   border-bottom-color: #34495e !important;
   border-top-color: #34495e !important;
 }
+.dropdown-backdrop { 
+	position: static; 
+}
 /* styles from flat-ui-free2.0.0-fix.less files */
 body {
   color: #34495e;
@@ -491,10 +494,12 @@ footer {
   }
 }
 img {
-  width: auto\9;
+  padding-top: 20px;	
+  width: auto;
   height: auto;
-  max-width: 100%;
-  vertical-align: middle;
+  float: right;
+  max-width: 85%;
+  vertical-align: right;
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
@@ -1171,62 +1176,112 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Content 17 stylesheet  
+ * Content 10 stylesheet  
  * */
-.content-17 {
-  position: relative;
-  text-align: center;
+.content-10 {
   padding-top: 130px;
-  padding-bottom: 130px;
+  padding-bottom: 125px;
+  position: relative;
 }
-@media (max-width: 768px) {
-  .content-17 {
-    padding-top: auto;
-    padding-bottom: auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+.content-10 .carousel {
+  margin-bottom: 0;
+  display: inline-block;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .content-10 .carousel {
+    margin-top: 80px;
   }
 }
-.content-17 p {
-  font-size: 18px;
-  font-weight: normal;
-  color: #7f8c8d;
-  margin: 0;
+.content-10 .carousel .item img {
+  margin: 0 auto;
 }
-.content-17 a {
-  color: #e74c3c;
-}
-.content-17 .carousel {
-  margin-top: 40px;
-  margin-bottom: 18px;
+.content-10 .carousel .carousel-indicators {
+  position: static;
   text-align: center;
-  font-size: 22px;
-  font-weight: normal;
-  color: #2c3e50;
-  font-weight: 500;
-  line-height: 25px;
+  margin: 0;
+  padding-top: 40px;
 }
-.content-17 .carousel .item {
-  -webkit-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  -moz-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  -o-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  opacity: 0;
+.content-10 .carousel .carousel-indicators li {
+  display: inline-block;
+  float: none;
+  width: 12px;
+  height: 12px;
+  margin-left: 7px;
+  text-indent: -999px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  cursor: pointer;
 }
-.content-17 .carousel .item.active.left,
-.content-17 .carousel .item.active.right {
+.content-10 .carousel .carousel-indicators li:first-child {
+  margin-left: 0;
+}
+.content-10 .carousel .carousel-indicators .active {
+  background-color: #c0392b;
+}
+.content-10 .carousel .item {
+  -webkit-transition: 0.6s ease-in-out opacity;
+  -moz-transition: 0.6s ease-in-out opacity;
+  -o-transition: 0.6s ease-in-out opacity;
+  transition: 0.6s ease-in-out opacity;
+  left: 0!important;
+}
+.content-10 .carousel .item.active.left,
+.content-10 .carousel .item.active.right {
   opacity: 0;
   z-index: 2;
 }
-.content-17 .carousel .item.active,
-.content-17 .carousel .item.prev,
-.content-17 .carousel .item.next {
+.content-10 .carousel .item.next {
   opacity: 1;
   z-index: 1;
 }
-.content-17 .carousel + * {
+.content-10 h3 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 48px;
+  font-weight: 300;
+}
+.content-10 p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #7f8c8d;
+}
+.content-10 .features .box {
   position: relative;
+  padding-left: 140px;
+  padding-top: 50px;
+  margin-top: 50px;
+  min-height: 100px;
+  border-top: 2px solid #ecf0f1;
+}
+.content-10 .features .box.first,
+.content-10 .features .box:first-child,
+.content-10 .features .box:first-of-type {
+  margin-top: 0;
+  border-top: 0;
+}
+.content-10 .features .box > img {
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+.content-10 .features h6 {
+  text-transform: none;
+  font-size: 22px;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+.content-10 .features p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #7f8c8d;
 }
 /**
  * Content 13 stylesheet  
@@ -1615,4 +1670,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   .footer-2 .social-btns {
     margin: 25px 0 10px;
   }
+}
+.row-padding {
+	padding-left: 80px
 }
